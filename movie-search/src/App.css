@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgb(55, 54, 54);
+}
+h2 {
+  display: inline;
+  padding: 0.5rem;
+  color: white;
+}
+#errorMsg {
+  background-color: green;
+  color: red;
+  padding: 1rem 0;
+}

@@ -4,7 +4,8 @@ export const initialState = {
   errorMessage: null,
 };
 
-export const Reducer = (state, action) => {
+export const reducer = (state, action) => {
+  console.log(action);
   switch (action.type) {
     case "SEARCH_MOVIES_REQUEST":
       return {
@@ -16,7 +17,7 @@ export const Reducer = (state, action) => {
       return {
         ...state,
         loading: false,
-        errorMessage: action.payload,
+        movies: action.payload,
       };
     case "SEARCH_MOVIES_FAILED":
       return {

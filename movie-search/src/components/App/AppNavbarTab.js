@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AppNavbarTab = ({ value }) => {
-  return <h2>{value}</h2>;
+  return (
+    <Link to={value === "home" ? "/" : value}>
+      <h2>{value}</h2>
+    </Link>
+  );
 };
 
 export default AppNavbarTab;
